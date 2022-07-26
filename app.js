@@ -15,3 +15,17 @@ switcher.addEventListener('click', function() {
 
     console.log('current class name: ' + className)
 });
+
+const title = "Loic Chasseray"
+var delay = 150;
+var i = 0
+
+const id = setInterval(typeWriter, delay);
+
+function typeWriter(){
+    document.getElementById("title").innerHTML += title[i]; 
+    i++; 
+    if (i >= title.length){
+        clearInterval(id);
+    }
+}
