@@ -24,7 +24,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-  
 .light-theme {
     --bg: var(--white);
     --fontColor: var(--black);
@@ -49,4 +48,12 @@ body {
     
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+
+    font-family: monospace;
 }
