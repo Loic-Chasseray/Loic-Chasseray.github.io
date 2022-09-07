@@ -6,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loic-Chasseray</title>
     <link rel="stylesheet" href="main.css"> <! links to an external CSS file>
+    <script src="app.js" defer></script> <! links to an external JavaScript file>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> <! toggle off>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" /> <! toggle on>
   </head>
   <body class="light-theme">
     
-    <div class="center">
-      <p>Hi, my name is</p>
-      <h1 id="title"></h1>
+    <p id="subtitle">Hi, my name is</p>
+    <p id="title"></p>
+
+    <p id="center"></p>
+
+    <div class="info">
+      <p id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p id="goals">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p id="interests">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p id="secret">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     
     <div>
-        <button class="btn material-symbols-outlined">toggle_off</button>
+        <button class="toggle material-symbols-outlined">toggle_off</button>
     </div> 
     
-    <div class="footer">
-      <p>v2.1.0</p>
+    <div class="wrapper">
+      <div class="info-btn">
+        <button id="about-btn">about</button>
+        <button id="goals-btn">goals</button>
+        <button id="interests-btn">interests</button>
+        <button id="secret-btn">secret</button>
+      </div> 
     </div>
-    
-    <script src="app.js"></script> <! links to an external JavaScript file>  
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+
+    <footer id="footer">v2.1.0</footer>
+      
   </body>
 </html>
