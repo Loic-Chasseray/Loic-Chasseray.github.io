@@ -10,35 +10,138 @@ body {
     font-family: helvetica;
 }
 
-.center {
-    font-size: 24px;
-    
+#title {
+    position: absolute;
+    font-size: 48px;
+    font-weight: bold;
     text-align: center;
-    
-    position: fixed;
 
     top: 50%;
-
     left: 50%;
-
     transform: translate(-50%, -50%);
+}
+#subtitle {
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+
+    animation: fadeIn 5s;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*#center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+
+    background-color: red;
+}*/
+
+.info {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    height: 250px;
+    width: 400px;
+
+    visibility: hidden;
+}
+#about {
+    position: inherit;
+    
+    border: inherit;
+}
+#goals {
+    position: inherit;
+
+    border: inherit;
+}
+#interests {
+    position: inherit;
+
+    border: inherit;
+}
+#secret {
+    position: inherit;
+
+    border: inherit;
+}
+
+.wrapper {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 900px;
+}
+.info-btn button {
+    position:absolute;
+    margin:0;
+    padding:none;
+
+    background: var(--bg);
+    border: 3px solid var(--border-color);
+    color: var(--fontColor);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-btn {
+    top: 0;
+    left: 0;  
+}
+#goals-btn {
+    top: 0;
+    right: 0;
+}
+#interests-btn {
+    bottom: 0;
+    left: 0;
+}
+#secret-btn {
+    bottom: 0;
+    right: 0;
 }
 
 .light-theme {
     --bg: var(--white);
     --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
+    --toggleBg: var(--black);
+    --toggleFontColor: var(--white);
+    --border-color: var(--black);
 }
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--white);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
+    --toggleBg: var(--white);
+    --toggleFontColor: var(--black);
+    --border-color: var(--white);
 }
 
-.btn {
-    position: fixed;
+.toggle {
+    position: absolute;
     top: 10px;
     right: 10px;
     height: 50px;
@@ -46,12 +149,12 @@ body {
     border-radius: 50%;
     border: none;
     
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+    color: var(--toggleFontColor);
+    background-color: var(--toggleBg);
 }
 
-.footer {
-    position: fixed;
+#footer {
+    position: absolute;
     bottom: 0px;
     right: 10px;
 
